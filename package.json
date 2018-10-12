@@ -1,0 +1,28 @@
+{
+  "name": "pbpup",
+  "version": "0.0.1",
+  "description": "A command line interface to help update ProBoards plugins",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "child_process": "^1.0.2",
+    "chromedriver": "^2.41.0",
+    "clear": "^0.1.0",
+    "cli-color": "^1.2.0",
+    "clipboardy": "^1.2.3",
+    "clui": "^0.3.6",
+    "configstore": "^4.0.0",
+    "figlet": "^1.2.0",
+    "inquirer": "^6.1.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "pbpup": "./index.js"
+  },
+  "author": "Peter A. Maggio",
+  "license": "UNLICENSED"
+}
