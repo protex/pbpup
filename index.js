@@ -570,4 +570,4 @@ async function main() {
   await openPluginEditPage();
   menu();
 }
-setTimeout(() => main(), 2000);
+setTimeout(() => main(), 5);
