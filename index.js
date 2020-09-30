@@ -548,7 +548,23 @@ async function selectConfig() {
   }
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+function browserOpen() {
+  return new Promise(async (resolve) => {
+    let open = false;
+    while (!open) {
+      await sleep(1000);
+      console.log('here');
+      open = browser !== undefined;
+    }
+    resolve();
+  });
+}
+
 async function main() {
+  await browserOpen();
   clearScreen();
   await selectConfig();
   await getForumUrl();
@@ -569,5 +585,5 @@ async function main() {
   countdown.stop();
   await openPluginEditPage();
   menu();
-}
-setTimeout(() => main(), 5);
+};
+main();
